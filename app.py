@@ -33,7 +33,7 @@ def data():
 @app.route("/about")
 def about():
     group_members = [
-        {"name": "Indriana Noviyanti", "image": "indriana.jpg", "bio": "Pecinta desain dan seni, berkontribusi pada kreativitas tim."},
+        {"name": "Indriana Noviyanti", "image": "indriana.jpg", "bio": "Pengembang Cyber Security, berkontribusi pada keamanan jaringan."},
         {"name": "Farhan Rangkuti", "image": "farhan.jpg", "bio": "Pengembang backend, spesialis algoritma."},
         {"name": "Bhagas Ade Pramono", "image": "bhagas.jpg", "bio": "Ahli dalam sistem jaringan, menyatukan koneksi antar sistem."},
         {"name": "Kardina Ferlinda", "image": "kardina.jpg", "bio": "Pengembang frontend, membangun antarmuka yang menarik."}
