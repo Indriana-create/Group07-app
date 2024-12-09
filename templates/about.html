@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Group 07</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .member h3 {
+            margin: 0;
+        }
+        .member p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tentang Kami - Group 07</h1>
+        <p>Berikut adalah anggota kelompok kami:</p>
+        {% for member in members %}
+        <div class="member">
+            <img src="{{ member.image }}" alt="{{ member.name }}">
+            <div>
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.bio }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
